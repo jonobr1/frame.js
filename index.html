@@ -80,8 +80,11 @@
 				timeout = setTimeout( function () {
 
 					editor.config.setKey( 'state', JSON.stringify( editor.toJSON() ) );
+					menubar.markClean();
 
 				}, 1000 );
+
+				menubar.markDirty();
 
 			}
 

@@ -199,13 +199,26 @@ button {
 	background-color: #333;
 }
 
-	#tabs span {
-		color: #555;
-		border-right: 1px solid #444;
-		padding: 10px;
-	}
+#tabs span {
+	color: #555;
+	border-right: 1px solid #444;
+	padding: 10px;
+}
 
-	#tabs span.selected {
-		color: #888;
-		background-color: #555;
-	}
+#tabs span.selected {
+	color: #888;
+	background-color: #555;
+}
+
+#menubar div#save-icon {
+	height: 8px;
+	width: 8px;
+	margin: 12px 8px 12px 12px;
+	padding: 0;
+	border-radius: 50%;
+	background-color: black;
+}
+
+#menubar div#save-icon.dirty {
+	background-color: red;
+}

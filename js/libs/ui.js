@@ -108,6 +108,18 @@ UI.Element.prototype = {
 
 		return this;
 
+	},
+
+	addClass: function ( name ) {
+
+		this.dom.classList.add( name );
+
+	},
+
+	removeClass: function ( name ) {
+
+		this.dom.classList.remove( name );
+
 	}
 
 };
