@@ -54,11 +54,12 @@ function Code( editor ) {
 		lineWrapping: true,
 		matchBrackets: true,
 		indentWithTabs: true,
-		tabSize: 4,
-		indentUnit: 4,
-		mode: 'javascript'
+		tabSize: 2,
+		indentUnit: 2,
+		mode: 'javascript',
+		showInvisibles: true
 	} );
-	codemirror.setOption( 'theme', 'monokai' );
+	codemirror.setOption( 'theme', 'one-dark' );
 	codemirror.on( 'change', function () {
 
 		if ( codemirror.state.focused === false ) return;
